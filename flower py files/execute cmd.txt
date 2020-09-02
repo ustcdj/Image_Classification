@@ -1,0 +1,9 @@
+
+cd aipnd-project
+
+create checkpoints Folder
+create checkpoint.pth file
+
+python train.py --gpu -p='flowers' --epochs=1
+
+python predict.py --img_path='flowers/test/5/image_05186.jpg' --gpu --checkpoint_path='checkpoints/checkpoint.pth'
